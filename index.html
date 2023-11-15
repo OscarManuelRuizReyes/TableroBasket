@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <title>Tablero</title>
+    </head>
+    <body>
+        <div id="board">
+            <div class="container">
+                <div>
+                    <h3 class="team-heading">HOME</h3>
+                    <h2 id="score-home">0</h2>
+                    <div>
+                        <button onclick="add1PointHome()">+1</button>
+                        <button onclick="add2PointsHome()">+2</button>
+                        <button onclick="add3PointsHome()">+3</button>
+                    </div>
+
+                </div>
+                <div>
+                    <h3 class="team-heading">GUEST</h3>
+                    <h2 id="score-guest">0</h2>
+                    <div>
+                        <button onclick="add1PointGuest()">+1</button>
+                        <button onclick="add2PointsGuest()">+2</button>
+                        <button onclick="add3PointsGuest()">+3</button>
+                    </div>
+
+                </div>
+            </div>
+            <button id="reinicio" onclick="reset()">Reset</button>
+        </div>    
+        <script src="index.js"></script>
+    </body>
+</html>
